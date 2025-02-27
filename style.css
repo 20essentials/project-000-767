@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+body {
+  --bg-size: 96px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-image: repeating-conic-gradient(
+    from 0deg at 0% 0%,
+    #000 0deg,
+    #00f2fe 10deg
+  ), repeating-conic-gradient(
+    from 0deg at 100% 0%,
+    #00f2fe 0deg,
+    #000 10deg
+  ),  repeating-conic-gradient(
+    from 0deg at 100% 100%,
+    #00f2fe 0deg,
+    #000 10deg
+  ),  repeating-conic-gradient(
+    from 0deg at 0% 100%,
+    #00f2fe 0deg,
+    #000 10deg
+  );
+  background-size: var(--bg-size) var(--bg-size);
+  background-blend-mode: screen;
+}
